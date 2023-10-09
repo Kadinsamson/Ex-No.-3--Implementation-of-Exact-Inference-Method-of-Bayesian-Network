@@ -1,51 +1,30 @@
-# Ex No. 3- Implementation of Exact Inference Method of Bayesian Network
+### EX NO : 03
+# <p align="center">Implementation of Exact Inference Method of Bayesian Network</p>
 
-## Aim:
+## Aim :
 To implement the inference Burglary P(B| j,⥗m) in alarm problem by using Variable Elimination method in Python.
 
-## Algorithm:
+## Algorithm :
 
-Step 1:
-
- Define the Bayesian Network structure for alarm problem with 5 random 
-             variables, Burglary,Earthquake,John Call,Mary Call and Alarm.<br>
-
-
-Step 2: 
-
- Define the Conditional Probability Distributions (CPDs) for each variable 
-            using the TabularCPD class from the pgmpy library.<br>
-
-
-Step 3:
-
- Add the CPDs to the network.<br>
-
-
-Step 4:
-
- Initialize the inference engine using the VariableElimination class from 
-             the pgmpy library.<br>
-
-
-Step 5:
-
- Define the evidence (observed variables) and query variables.<br>
-
-Step 6:
-
- Perform exact inference using the defined evidence and query variables.<br>
-
-Step 7:
-
- Print the results.<br>
+#### Step 1: 
+Define the Bayesian Network structure for alarm problem with 5 random variables, Burglary,Earthquake,John Call,Mary Call and Alarm.<br>
+#### Step 2: 
+Define the Conditional Probability Distributions (CPDs) for each variable using the TabularCPD class from the pgmpy library.<br>
+#### Step 3: 
+Add the CPDs to the network.<br>
+#### Step 4: 
+Initialize the inference engine using the VariableElimination class from the pgmpy library.<br>
+#### Step 5: 
+Define the evidence (observed variables) and query variables.<br>
+#### Step 6: 
+Perform exact inference using the defined evidence and query variables.<br>
+#### Step 7: 
+Print the results.<br>
 
 ## Program :
-```
-Name:Kadin Samson L
-
-Reg.No:212221230044
-```
+Developed By : **Varsha Ajith**
+</br>
+Register No. : **212221230118**
 ```py
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
@@ -64,11 +43,10 @@ evidence={'JohnCalls':1,'MarryCalls':0}
 query_variable='Burglary'
 result=inference.query(variables=[query_variable],evidence=evidence)
 print(result)
-``````
-
-
+```
 ## Output :
-![oyut](1.png)
+
+![image](https://github.com/jithendra2004/Ex-No.-3--Implementation-of-Exact-Inference-Method-of-Bayesian-Network/assets/94226297/89fc1121-c75b-424e-8f6e-a9c30f54c6b6)
 
 ## Result :  
-Hence the implementation of Exact Inference Method of Bayesian Network Is implemented Successfully.
+Thus, the implementation of Exact Inference Method of Bayesian Network Is implemented Successfully.
